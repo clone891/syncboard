@@ -1,8 +1,6 @@
-import dynamic from "next/dynamic"
-import React from "react"
-
-const AuthForm = dynamic(() => import("@/components/auth/AuthForm"), { ssr: false })
+import React from "react";
+import AuthForm from "@/components/auth/AuthForm";
 
 export default function LoginPage() {
-  return <AuthForm initialSignUp={false} />
+  return <AuthForm initialSignUp={false} />;
 }
